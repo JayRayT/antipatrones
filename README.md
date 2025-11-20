@@ -1,6 +1,6 @@
 # antipatrones
 Juan David Rayo Tejada - 20231020023
-Jonnatam Camacho Camargo - 20231020204
+Jonnatan Camacho Camargo - 20231020204
 
 Antipatrones java
 
