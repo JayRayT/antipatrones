@@ -1,6 +1,8 @@
 # antipatrones
-antipatrones java
-¡Claro que sí, Juan! Aquí tienes los tres antipatrones identificados en tu código original, explicados con ejemplos concretos y sus respectivas correcciones en código Java. Esto te servirá como una guía clara para evitar estos errores en futuros proyectos.
+Juan David Rayo Tejada - 20231020023
+Jonnatam Camacho Camargo - 20231020204
+
+Antipatrones java
 
 1. Antipatrón: Data Clumps / Uso de Map<String, String> como entidad
 Ejemplo con antipatrón:
@@ -18,13 +20,13 @@ public class User {
     private final String name;
     private final String tier;
 
-    public User(String id, String name, String tier) {
+public User(String id, String name, String tier) {
         this.id = id;
         this.name = name;
         this.tier = tier;
     }
 
-    public String getId() { return id; }
+public String getId() { return id; }
     public String getName() { return name; }
     public String getTier() { return tier; }
 }
@@ -82,6 +84,8 @@ public double shipCostDomestic(double weight, double distance) {
 public double shipCostInternational(double weight, double distance) {
     return calculateShipping(weight, distance, 8.0, 3.0);
 }
+
+
 Antipatrones python
 
 1. Antipatrón: Data Clumps / Uso de diccionarios genéricos para representar usuarios
@@ -96,8 +100,7 @@ class User:
         self.id = user_id
         self.name = name
         self.tier = tier
-
-    def __repr__(self):
+        def __repr__(self):
         return f"[{self.id}] {self.name} - tier={self.tier}"
 
 
@@ -142,7 +145,7 @@ def ship_cost_domestic(self, weight, distance_km):
  3. Antipatrón: Duplicación de lógica en métodos similares
  Ejemplo con antipatrón:
 def ship_cost_domestic(self, weight, distance_km):
-    # lógica repetida...
+    #logica repetida
 
 def ship_cost_international(self, weight, distance_km):
     # misma lógica con pequeñas diferencias...
